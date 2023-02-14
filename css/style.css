@@ -35,6 +35,7 @@ COMMON
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: red;
 }
 
 
@@ -51,9 +52,17 @@ header{
     width: 100%; 
 }
 
+header .container-fluid{
+    background-color: white;
+}
+
 .nb_logo_box{
-    width: 3.75rem;
+    width: 3.125rem;
     height: auto;
+}
+
+.nb_logo_box img{
+    overflow: hidden;
 }
 
 .nb_search_box {
@@ -69,11 +78,10 @@ header{
     background-color:#e5e5e5;
 }
 
-.nb_bell_icon{
+.nb_bell_icon a{
     color: #ff8f00;
     font-size: 1.3rem;
 }
-
 
 
 
