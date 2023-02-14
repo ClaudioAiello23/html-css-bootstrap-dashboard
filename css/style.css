@@ -56,8 +56,17 @@ header{
     height: auto;
 }
 
+.nb_search_box {
+    background-color:#e5e5e5;
+}
+
+.nb_search_box span a {
+    color: black;
+    font-size: 1.25rem;
+}
+
 .nb_search_box input {
-    background-color:#e5e5e5 ;
+    background-color:#e5e5e5;
 }
 
 .nb_bell_icon{
