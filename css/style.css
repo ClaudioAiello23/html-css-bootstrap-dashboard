@@ -1,3 +1,32 @@
+
+
+/* 
+***********************
+VARIABILI
+*********************** 
+*/
+
+:root{
+    --nb_first-color: #f8f9fa;
+    --nb_header-height: 4.375rem;
+}
+
+
+/* 
+***********************
+SETUP
+*********************** 
+*/
+
+.nb_sidebar_box{
+    background-color: green;
+}
+
+.nb_main_central_box{
+    background-color: red;
+}
+
+
 /* 
 ***********************
 COMMON
@@ -8,6 +37,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.flex{
+    display: flex;
+}
+
 
 
 /* 
@@ -16,11 +49,38 @@ HEADER
 *********************** 
 */
 
+header{
+    height: var(--nb_header-height);
+    background-color: var(--nb_first-color);
+    position: fixed;
+    width: 100%; 
+}
 
 
 
 /* 
 ***********************
-MAIN
+MAIN STRUTTURA
 *********************** 
 */
+
+main{
+    padding-top: var(--nb_header-height);
+    background-color: lightblue;
+    width: 100%;
+}
+
+.nb_sidebar_box, .nb_main_central_box{
+    height: calc(100vh - var(--nb_header-height));
+}
+
+.nb_main_central_box{
+    overflow: auto;
+}
+
+.nb_sidebar_box{
+    padding: 0 .625rem;
+}
+
+
+
