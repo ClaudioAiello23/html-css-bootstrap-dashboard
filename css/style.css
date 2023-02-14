@@ -37,11 +37,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.flex{
-    display: flex;
-}
-
-
 
 /* 
 ***********************
@@ -55,6 +50,21 @@ header{
     position: fixed;
     width: 100%; 
 }
+
+.nb_logo_box{
+    width: 3.75rem;
+    height: auto;
+}
+
+.nb_search_box input {
+    background-color:#e5e5e5 ;
+}
+
+.nb_bell_icon{
+    color: #ff8f00;
+    font-size: 1.3rem;
+}
+
 
 
 
@@ -80,6 +90,7 @@ main{
 
 .nb_sidebar_box{
     padding: 0 .625rem;
+    width: auto;
 }
 
 
