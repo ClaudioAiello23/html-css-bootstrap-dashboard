@@ -35,7 +35,6 @@ COMMON
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: red;
 }
 
 
@@ -85,6 +84,9 @@ header .nb_ellipsis_icon a{
     color: #5b5858;
 }
 
+.dropdown-menu a{
+    color: black;
+}
 
 .nb_header_icons div a{
     font-size: 1.3rem;

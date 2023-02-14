@@ -43,11 +43,20 @@
                 </div>
                 <!-- End Search Bar-->
                 <!-- Start Menu Icons-->
-                <div class="col d-flex justify-content-end nb_header_icons">
+                <div class="col d-flex justify-content-end align-items-center nb_header_icons">
                     <div class="nb_list_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-list-ul"></i></a></div>
                     <div class="nb_question_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-circle-question"></i></a></div>
                     <div class="nb_ellipsis_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></div>
-                    <div class="nb_bell_icon"><a href="#"><i class="fa-solid fa-bell"></i></a></div>
+                    <div class="dropdown shadow-none nb_bell_icon">
+                        <a class="btn" href="#" data-bs-toggle="dropdown" >
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                        <ul class="dropdown-menu" >
+                          <li><a class="dropdown-item" href="#">Profilo</a></li>
+                          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- End Menu Icons-->
             </div>
