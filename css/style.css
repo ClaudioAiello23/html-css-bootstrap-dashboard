@@ -56,13 +56,10 @@ header .container-fluid{
     background-color: white;
 }
 
-.nb_logo_box{
+.nb_logo_mobile{
     width: 3.125rem;
-    height: auto;
-}
+    height: 3.125rem;
 
-.nb_logo_box img{
-    overflow: hidden;
 }
 
 .nb_search_box {
@@ -80,9 +77,18 @@ header .container-fluid{
 
 .nb_bell_icon a{
     color: #ff8f00;
-    font-size: 1.3rem;
 }
 
+header .nb_list_icon a,
+header .nb_question_icon a,
+header .nb_ellipsis_icon a{
+    color: #5b5858;
+}
+
+
+.nb_header_icons div a{
+    font-size: 1.3rem;
+}
 
 
 /* 

@@ -24,20 +24,32 @@
     <header>
         <div class="container-fluid my-2">
             <div class="row align-items-center">
+                <!-- Start Logo Boolean -->
                 <div class="col">
-                    <div class="nb_logo_box">
+                    <div class="nb_logo_mobile d-xl-none">
                         <img src="img/mobile-logo.png" alt="logo_boolean" class="img-fluid">
                     </div>
+                    <div class="nb_logo_desktop d-none d-xl-block">
+                        <img src="img/logo.svg" alt="logo_boolean">
+                    </div>
                 </div>
+                <!-- End Logo Boolean -->
+                <!-- Start Search Bar-->
                 <div class="col-8">
                     <div class="nb_search_box input-group-text">
                         <span><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
                         <input type="text" id="search" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0 rounded form-control">
                     </div>
                 </div>
-                <div class="col d-flex justify-content-end">
+                <!-- End Search Bar-->
+                <!-- Start Menu Icons-->
+                <div class="col d-flex justify-content-end nb_header_icons">
+                    <div class="nb_list_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-list-ul"></i></a></div>
+                    <div class="nb_question_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-circle-question"></i></a></div>
+                    <div class="nb_ellipsis_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></div>
                     <div class="nb_bell_icon"><a href="#"><i class="fa-solid fa-bell"></i></a></div>
                 </div>
+                <!-- End Menu Icons-->
             </div>
         </div>
     </header>
