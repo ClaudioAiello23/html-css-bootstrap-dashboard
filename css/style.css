@@ -179,3 +179,8 @@ main .nb_sidebar_box .nb_hidden_nav{
     color: black;
 }
 
+.nb_subtitle_users,
+.nb_list_item_users,
+.nb_todo_list {
+    font-size: .875rem;
+}
