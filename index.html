@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Dashboard</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- /Bootstrap css -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- /Font Awesome -->
     <!-- Google Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <!-- /Google Font Roboto -->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- /Font Awesome -->
-    <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- /Bootstrap css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -47,7 +47,7 @@
                     <div class="nb_list_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-list-ul"></i></a></div>
                     <div class="nb_question_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-circle-question"></i></a></div>
                     <div class="nb_ellipsis_icon pe-4 d-none d-xl-block"><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></div>
-                    <div class="dropdown shadow-none nb_bell_icon">
+                    <div class="dropdown nb_bell_icon">
                         <a class="btn" href="#" data-bs-toggle="dropdown" >
                             <i class="fa-solid fa-bell"></i>
                         </a>
@@ -67,7 +67,24 @@
     <main>
         <div class="main_box d-flex">
             <section class="nb_sidebar_box">
-            PROVA SIDEBAR PROVA
+                <div class="container">
+                    <div class="row flex-column py-4">
+                        <div class="col">
+                            <div class="py-1">
+                                <a href="#" class="pe-3"><i class="fa-solid fa-house"></i><span><a href="#" class="d-none d-xl-inline-block text-decoration-none nb_hidden_nav">Home</a></span></a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#" class="pe-3"><i class="fa-solid fa-chart-simple"></i><span><a href="#" class="d-none d-xl-inline-block text-decoration-none nb_hidden_nav">Stats</a></span></a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#" class="pe-3"><i class="fa-solid fa-signal"></i><span><a href="#" class="d-none d-xl-inline-block text-decoration-none nb_hidden_nav">Signals</a></span></a>
+                            </div> 
+                        </div>
+                        <div class="col d-flex align-items-end">
+                            <div><a href="#" class="pe-3"><i class="fa-solid fa-gear"></i><span><a href="#" class="d-none d-xl-inline-block text-decoration-none nb_hidden_nav">Admin</a></span></a></div> 
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="nb_main_central_box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cum dolor, laudantium error ipsa consequatur quae suscipit autem molestiae. Quaerat reiciendis repudiandae numquam molestias corrupti quisquam ipsam voluptatibus at ut.
             Doloribus asperiores at, quaerat aperiam nobis id nihil commodi facere, nulla neque error laboriosam placeat possimus repellat assumenda velit dicta quibusdam maiores corrupti eaque sit molestias molestiae. Omnis, fugiat consequuntur?

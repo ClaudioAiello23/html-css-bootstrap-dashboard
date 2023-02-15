@@ -2,29 +2,30 @@
 
 /* 
 ***********************
-VARIABILI
+VARIABLES
 *********************** 
 */
 
 :root{
     --nb_first-color: #f8f9fa;
+    --nb_second-color: #051e34;
+    --nb_link-color: white;
     --nb_header-height: 4.375rem;
 }
-
 
 /* 
 ***********************
 SETUP
 *********************** 
-*/
+*/ 
 
-.nb_sidebar_box{
+/* .nb_sidebar_box{
     background-color: green;
-}
+}  */
 
 .nb_main_central_box{
     background-color: red;
-}
+} 
 
 
 /* 
@@ -95,13 +96,13 @@ header .nb_ellipsis_icon a{
 
 /* 
 ***********************
-MAIN STRUTTURA
+MAIN STRUCTURE
 *********************** 
 */
 
 main{
     padding-top: var(--nb_header-height);
-    background-color: lightblue;
+    /* background-color: lightblue; */
     width: 100%;
 }
 
@@ -118,5 +119,27 @@ main{
     width: auto;
 }
 
+/* 
+***********************
+MAIN CONTENT
+*********************** 
+*/
 
+/* Sezione Main Sidebar */
 
+main .nb_sidebar_box{
+    background-color: var(--nb_second-color);
+    background-image: url(../img/sidebar-bg.png);
+}
+
+main .container, main .row{
+    height: inherit;
+}
+
+main .nb_sidebar_box a{
+    color: var(--nb_link-color);
+}
+
+main .nb_sidebar_box .nb_hidden_nav{
+    font-size: .875rem;
+}
