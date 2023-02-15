@@ -103,7 +103,6 @@ MAIN STRUCTURE
 
 main{
     padding-top: var(--nb_header-height);
-    /* background-color: lightblue; */
     width: 100%;
 }
 
@@ -116,7 +115,6 @@ main{
 }
 
 .nb_sidebar_box{
-    padding: 0 .625rem;
     width: auto;
 } 
 
@@ -144,6 +142,7 @@ main .nb_sidebar_box a{
 main .nb_sidebar_box .nb_hidden_nav{
     font-size: .875rem;
 }
+
 
 /* Sezione Main Central Top */
 
@@ -173,3 +172,10 @@ main .nb_sidebar_box .nb_hidden_nav{
 .nb_angles_right_icon{
     color: var(--nb_link-color);
 }
+
+/* Sezione Main Central Bottom */
+
+.nb_central_bottom{
+    color: black;
+}
+
