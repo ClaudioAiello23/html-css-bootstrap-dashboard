@@ -9,7 +9,9 @@ VARIABLES
 :root{
     --nb_first-color: #f8f9fa;
     --nb_second-color: #051e34;
+    --nb_third-color: #1b72e8;
     --nb_link-color: white;
+    --nb_badge-color: #165bba;
     --nb_header-height: 4.375rem;
 }
 
@@ -19,14 +21,13 @@ SETUP
 *********************** 
 */ 
 
-/* .nb_sidebar_box{
-    background-color: green;
-}  */
-
 .nb_main_central_box{
-    background-color: red;
+    background-color: lightblue;
 } 
 
+/* .nb_central_top{
+    background-color: rgb(181, 228, 181);
+} */
 
 /* 
 ***********************
@@ -142,4 +143,33 @@ main .nb_sidebar_box a{
 
 main .nb_sidebar_box .nb_hidden_nav{
     font-size: .875rem;
+}
+
+/* Sezione Main Central Top */
+
+.nb_plus{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.nb_plus i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--nb_link-color)
+}
+
+
+.nb_central_top{
+    background-color:var(--nb_third-color);
+    color: white;
+}
+
+
+.nb_angles_right_icon{
+    color: var(--nb_link-color);
 }
