@@ -38,7 +38,7 @@
                 <div class="col me-0">
                     <div class="nb_search_box input-group-text">
                         <span><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
-                        <input type="text" id="search" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0 rounded form-control">
+                        <input type="text" id="search" placeholder="Prova a cercare: Lezioni di Laravel" class="border-0 rounded form-control nb_search_field">
                     </div>
                 </div>
                 <!-- End Search Bar-->
@@ -66,40 +66,42 @@
     <!-- Start Main -->
     <main>
         <div class="main_box d-flex">
+            <!-- Inizio parte Sidebar Main -->
             <section class="nb_sidebar_box">
                 <div class="container">
                     <div class="row flex-column py-4 px-3">
                         <div class="col-auto">
                             <div class="py-1">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="d-xl-inline-block"><i class="fa-solid fa-house"></i></div>
-                                    <div class="d-none d-xl-inline-block nb_hidden_nav">Home</div>
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <div class="pe-3"><i class="fa-solid fa-house"></i></div>
+                                    <div class="d-none d-xl-block nb_hidden_nav">Home</div>
                                 </a>
                             </div>
                             <div class="py-1">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="d-xl-inline-block"><i class="fa-solid fa-chart-simple"></i></div>
-                                    <div class="d-none d-xl-inline-block nb_hidden_nav">Stats</div>
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <div class="pe-4"><i class="fa-solid fa-chart-simple"></i></div>
+                                    <div class="d-none d-xl-block nb_hidden_nav">Stats</div>
                                 </a>
                             </div>
                             <div class="py-1">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="d-xl-inline-block"><i class="fa-solid fa-signal"></i></div>
-                                    <div class="d-none d-xl-inline-block nb_hidden_nav">Signals</div>
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <div class="pe-3"><i class="fa-solid fa-signal"></i></div>
+                                    <div class="d-none d-xl-block nb_hidden_nav">Signals</div>
                                 </a>
                             </div>
                         </div>
                         <div class="col d-flex flex-column justify-content-end">
                             <div>
-                                <a href="#" class="text-decoration-none">
-                                    <div class="d-xl-inline-block"><i class="fa-solid fa-gear"></i></div>
-                                    <div class="d-none d-xl-inline-block nb_hidden_nav">Admin</div>
+                                <a href="#" class="d-flex text-decoration-none">
+                                    <div class="pe-3"><i class="fa-solid fa-gear"></i></div>
+                                    <div class="d-none d-xl-block nb_hidden_nav">Admin</div>
                                 </a>
                             </div>
                         </div>        
                     </div>
                 </div>
             </section>
+            <!-- Fine parte Sidebar Main -->
 
             <section class="container-fluid nb_main_central_box px-0">
                 <!-- Inizio parte main central TOP -->
@@ -130,12 +132,80 @@
                 <!-- Inizio parte main central BOTTOM -->
                 <div class="container py-4 nb_central_bottom">
                     <div class="row gy-3">
-                        <div class="col-12">
-                            <!-- Inizio card - Prossime Classi - BOOTSTRAP SEZ. CONTENT - TABLES  -->
+                        <div class="col-12 col-xl-8">
+                            <!-- Inizio card - Table Prossime Classi - BOOTSTRAP SEZ. CONTENT - TABLES  -->
                             <div class="card text-dark bg-light mb-4">
                                 <div class="card-header fs-4">Prossime classi</div>
                                 <div class="card-body">
-                                    table
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="nb_table_hidden">Data Inizio</th>
+                                            <th scope="col" class="nb_table_hidden">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 75</span></td>
+                                            <td class="nb_table_hidden">15 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 76</span></td>
+                                            <td class="nb_table_hidden">16 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-success btn-sm ">Done</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 77</span></td>
+                                            <td class="nb_table_hidden">17 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-warning btn-sm ">process</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 78</span></td>
+                                            <td class="nb_table_hidden">18 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-success btn-sm ">Done</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 79</span></td>
+                                            <td class="nb_table_hidden">19 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm">Danger</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 80</span></td>
+                                            <td class="nb_table_hidden">20 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-success btn-sm ">Done</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 81</span></td>
+                                            <td class="nb_table_hidden">20 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm">Danger</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="d-flex"><div class="nb_img_table_box pe-2"><img src="img/class-avatar.png" alt="tableimg" class="img-fluid"></div><span>Classe 89</span></td>
+                                            <td class="nb_table_hidden">21 Feb 2021</td>
+                                            <td class="nb_table_hidden">20%</td>
+                                            <td><button type="button" class="btn btn-success btn-sm ">Done</button></td>
+                                            <td><a href="#" class="nb_pen_icon text-start px-3"><i class="fa-solid fa-pen-to-square"></i></a><a href="#" class="nb_trash_icon"><i class="fa-solid fa-trash"></i></a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                 </div>
                             </div>
                             <!-- Fine card - Prossime Classi -->
@@ -185,7 +255,7 @@
                             </div>
                             <!-- Fine card - FAQ -->
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 col-xl-4">
                             <!-- Inizio card - Todo - BOOTSTRAP SEZ. COMPONENTS -LIST GROUP -->
                             <div class="card text-dark bg-light mb-4">
                                 <div class="card-header">Todo</div>

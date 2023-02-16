@@ -76,6 +76,16 @@ header .container-fluid{
     background-color:#e5e5e5;
 }
 
+/* La regola Bootstrap form-control presente nell'input Search
+fa apparire la fastidiosa ombra azzurra una volta che si
+ clicca sul campo Search; imppstando una regola hover sulla 
+ classe nb_search_field creata per il campo input, il
+ "box-shadow none" rimuove questa regola bootstrap. 
+ nb da confermare correttezza regola*/
+.nb_search_field:hover {
+    box-shadow: none;
+} 
+
 .nb_bell_icon a{
     color: #ff8f00;
 }
@@ -139,8 +149,9 @@ main .nb_sidebar_box a{
     color: var(--nb_link-color);
 }
 
-main .nb_sidebar_box .nb_hidden_nav{
+main .nb_sidebar_box {
     font-size: .875rem;
+    width: auto;
 }
 
 
@@ -181,4 +192,29 @@ main .nb_sidebar_box .nb_hidden_nav{
 
 .nb_small_text_cards {
     font-size: .875rem;
+}
+
+
+.nb_pen_icon,
+.nb_trash_icon{
+    color: grey;
+}
+
+
+.nb_img_table_box{
+    width: 32px;
+    height: 32px;
+}
+
+.nb_table_hidden{
+    opacity: 0;
+}
+
+
+/* Media query per comparsa Table colonne DATA INIZIO e ROI */
+@media screen and (min-width:768px) {
+
+.nb_table_hidden{
+    opacity: 1;
+}
 }
