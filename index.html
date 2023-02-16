@@ -311,69 +311,69 @@
           al tasto"+" del Main Central -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-        <div class="container">
-            <div class="row gy-3">
-            <div class="col-12 col-xl-6">
-                <label for="nb_name_form" class="form-label">Nome</label>
-                <input class="form-control" type="text" id="nb_name_form">
-            </div>
-            <div class="col-12 col-xl-6">
-                <label for="nb_lastname_form" class="form-label">Cognome</label>
-                <input class="form-control" type="text" id="nb_lastname_form">
-            </div>
-            <div class="col-12 col-xl-6">
-                <label for="nb_email_form" class="form-label">Email</label>
-                <div class="input-group">
-                <div class="input-group-text">@</div>
-                <input type="text" class="form-control" id="nb_email_form">
+        <form class="offcanvas-body" action="#" method="get">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-12 col-xl-6">
+                        <label for="nb_name_form" class="form-label">Nome</label>
+                        <input class="form-control" type="text" id="nb_name_form" required>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <label for="nb_lastname_form" class="form-label">Cognome</label>
+                        <input class="form-control" type="text" id="nb_lastname_form" required>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <label for="nb_email_form" class="form-label">Email</label>
+                        <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="email" class="form-control" id="nb_email_form" required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <label for="nb_password_form" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="nb_password_form" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="nb_address_form" class="form-label">Indirizzo</label>
+                        <input class="form-control" type="text" id="nb_address_form">
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <label for="nb_city_form" class="form-label">Città</label>
+                        <input class="form-control" type="text" id="nb_city_form">
+                    </div>
+                    <div class="col-12 col-xl-4">
+                        <label for="nb_state_form" class="form-label">Stato</label>
+                        <select id="nb_state_form" class="form-select">
+                        <option selected>Scegli</option>
+                        <option>ITALIA</option>
+                        <option>STATO A CASO</option>
+                        <option>STATO BENE</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-xl-2">
+                        <label for="nb_cap_form" class="form-label">CAP</label>
+                        <input class="form-control" type="text" id="nb_cap_form">
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                        <label for="nb_photo_form" class="form-label">Foto</label>
+                        <input class="form-control" type="file" id="nb_photo_form">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input class="form-check-input" type="checkbox" value="" id="nb_check_form" required>
+                        <label class="form-check-label" for="nb_check_form">Seleziona per proseguire</label>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="reset" class="btn btn-warning">Svuota</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-xl-6">
-                <label for="nb_password_form" class="form-label">Password</label>
-                <input type="password" class="form-control" id="nb_password_form">
-            </div>
-            <div class="col-12">
-                <label for="nb_address_form" class="form-label">Indirizzo</label>
-                <input class="form-control" type="text" id="nb_address_form">
-            </div>
-            <div class="col-12 col-xl-6">
-                <label for="nb_city_form" class="form-label">Città</label>
-                <input class="form-control" type="text" id="nb_city_form">
-            </div>
-            <div class="col-12 col-xl-4">
-                <label for="nb_state_form" class="form-label">Stato</label>
-                <select id="nb_state_form" class="form-select">
-                <option selected>Scegli</option>
-                <option>ITALIA</option>
-                <option>STATO A CASO</option>
-                <option>STATO BENE</option>
-                </select>
-            </div>
-            <div class="col-12 col-xl-2">
-                <label for="nb_cap_form" class="form-label">CAP</label>
-                <input class="form-control" type="text" id="nb_cap_form">
-            </div>
-            <div class="col-12">
-                <div class="mb-3">
-                <label for="nb_photo_form" class="form-label">Foto</label>
-                <input class="form-control" type="file" id="nb_photo_form">
-                </div>
-            </div>
-            <div class="col-12">
-                <input class="form-check-input" type="checkbox" value="" id="nb_check_form">
-                <label class="form-check-label" for="nb_check_form">Seleziona per proseguire</label>
-            </div>
-            <div class="col-12">
-                <button type="button" class="btn btn-primary">Salva</button>
-                <button type="button" class="btn btn-warning">Svuota</button>
-            </div>
-            </div>
-        </div>
-        </div>
+        </form>
     </div>
     <!-- Fine inserimento Menu a Comparsa OFFCANVAS, legato
           al tasto"+" del Main Central -->
