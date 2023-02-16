@@ -154,6 +154,10 @@ main .nb_sidebar_box {
     width: auto;
 }
 
+main .nb_sidebar_icons:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 
 /* Sezione Main Central Top */
 
