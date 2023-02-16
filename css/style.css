@@ -28,7 +28,6 @@ SETUP
 /* .nb_central_top{
     background-color: rgb(181, 228, 181);
 } */
-
 /* 
 ***********************
 COMMON
@@ -188,6 +187,12 @@ main .nb_sidebar_icons:hover{
     color: var(--nb_link-color);
 }
 
+
+.offcanvas-end{
+     width:600px; /*larghezza menu a comparsa offcanvas quando clicco sul tasto plus */
+}
+
+
 /* Sezione Main Central Bottom */
 
 .nb_central_bottom{
@@ -222,3 +227,4 @@ main .nb_sidebar_icons:hover{
     opacity: 1;
 }
 }
+
